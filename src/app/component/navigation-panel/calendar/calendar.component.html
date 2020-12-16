@@ -1,0 +1,114 @@
+<!-- <div class="grid-stack-item calendar-panel-grid" id="calendar-panel-grid" data-gs-height="5" data-gs-min-height="3" data-gs-min-width="2" data-gs-width="4" data-gs-x="4" data-gs-y="4"> -->
+    <div class="grid-stack-item-content" >
+        <div id="calendar-panel-wrapper" class="calendar-panel-wrapper" data-id="calendar-panel-wrapper">
+            <div class="calendar-panel-header" ondblclick="expandCollapse('calendar-panel');">
+                <div class="calendar-panel-header-left">
+                    <img src="/assets/dist/img/icons/chat-queue-head-icon.png">
+                    <span>Calendar</span>
+                </div>
+                <div class="calendar-panel-header-right">
+                    <a href="javascript:toggleScheduleCalendar()" id="calender-panel-collapse-btn"><img src="/assets/dist/img/icons/appointment.png"></a>
+                    <a href="javascript:void(0)" (click)="toggleclose()" id="calendar-panel-close-btn"><i class="fa fa-close"></i></a>
+                </div>
+            </div>
+            <div class="calendar-panel-body" id="calendar-panel-body">
+                <div class="soon">
+                    <i class="fa fa-check" aria-hidden="true"></i>Appointment soon Today at 9:00am
+                </div>
+                <div class="schedule-calender">
+                    <div id="datepicker-schedule2" class="datepicker-schedule2"></div>
+                    <div class="mark">
+                        <h5 class="current"><span></span> Current Date</h5>
+                        <h5 class="chat-1"><span></span> 1 Chat</h5>
+                        <h5 class="appointment"><span></span>2 or more Chats</h5>
+                    </div>
+                </div>
+                <div class="schedule-appointment schedule-appointment1">
+                    <h5><span><p style="text-indent: 70px">November 30</p></span></h5>
+                    <table>
+                        <tr>
+                            <td>8am</td><td><input type="text" id="8am"></td>
+                        </tr>
+                        <tr>
+                            <td>9am</td><td><input type="text" id="9am"></td>
+                        </tr>
+                        <tr>
+                            <td>10am</td><td><input type="text" id="10am"></td>
+                        </tr>
+                        <tr>
+                            <td>11am</td><td><input type="text" id="11am"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="schedule-appointment schedule-appointment2" style="display:none;">
+                    <h5><i class="fa fa-arrow-left" aria-hidden="true"></i> Set an Appointment:</h5>
+                    <div class="appointment">
+                        <div class="left">
+                            <select id="month" disabled>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                            <select id="day" disabled>
+                                <option value="0">Sunday</option>
+                                <option value="1">Monday</option>
+                                <option value="2">Tuesday</option>
+                                <option value="3">Wednesday</option>
+                                <option value="4">Thursday</option>
+                                <option value="5">Friday</option>
+                                <option value="6">Saturday</option>
+                            </select>
+                            <div class="time">
+                                <select id="time">
+                                    <option value="1">1:00</option>
+                                    <option value="2">2:00</option>
+                                    <option value="3">3:00</option>
+                                    <option value="4">4:00</option>
+                                    <option value="5">5:00</option>
+                                    <option value="6">6:00</option>
+                                    <option value="7">7:00</option>
+                                    <option value="8">8:00</option>
+                                    <option value="9">9:00</option>
+                                    <option value="10">10:00</option>
+                                    <option value="11">11:00</option>
+                                    <option value="12">12:00</option>
+                                </select>
+                                <select id="ampm">
+                                    <option value="am">AM</option>
+                                    <option value="pm">PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <button class="confirm">Confirm</button>
+                        </div>
+                    </div>
+                    <div class="final-appointment">
+                        <h5 class="date">Not Selected</h5>
+                        <h3 class="time">1:00 AM</h3>
+                    </div>
+                    <div class="prefer">
+                        <div class="name-block">
+                            <label>Name:</label>
+                            <input type="text" name="" placeholder="Brent21777">
+                        </div>
+                        <div class="email-block">
+                            <label>Email:</label>
+                            <input type="text" name="" placeholder="BrentF@gmail.com">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<!-- </div> -->

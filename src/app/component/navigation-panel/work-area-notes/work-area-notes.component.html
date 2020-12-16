@@ -1,0 +1,118 @@
+<!-- <div class="grid-stack-item work-area-notes-grid" id="work-area-notes-grid" data-gs-height="5" data-gs-min-height="5" data-gs-min-width="4" data-gs-width="4" data-gs-x="5" data-gs-y="0"> -->
+    <div class="grid-stack-item-content" style="width: 300px; margin-right: 10px;" >
+
+
+        <!-- PDF's master Div -->
+        <div class="work-area-notes-wrapper" id="work-area-notes-wrapper">
+
+
+            <!-- PDF Header-->
+            <div class="work-area-notes-header" ondblclick="expandCollapse('work-area-notes')">
+                <div class="work-area-notes-header-left">
+                    <img src="/assets/dist/img/icons/work-area-notes-icon.png">
+                    <span>Work Area Notes</span>
+                </div>
+
+                <div class="work-area-notes-header-right">
+                    <a href="javascript:void(0)" onclick="$('#work-area-notes-body').toggle()" id="work-area-notes-collapse-btn"><i class="fa fa-angle-down"></i></a>
+                    <a href="javascript:void(0)" (click)="toggleclose()"  id="work-area-notes-close-btn"><i class="fa fa-close"></i></a>
+                </div>
+
+            </div>
+
+
+            <!-- PDF panel Body-->
+            <div class="work-area-notes-body" id="work-area-notes-body">
+                <div class="edit-area">
+                    
+                    <script src="./assets/dist/js/ckeditor.js"></script>
+                    <script src="/assets/dist/js/sample.js"></script>
+                    <link rel="stylesheet" href="/assets/dist/css/samples.css">
+                    <link rel="stylesheet" href="/assets/dist/css/neo.css">
+                    <div class="cke-editor">
+                    </div>
+                    <!-- <script>
+                        //initSample();
+                        CKEDITOR.replace( 'editor' );
+                    </script> -->
+                </div>
+                <div class="filter-area">
+                    <div class="user-notes-wrapper">
+                        <input type="text" id="userId" placeholder="User Id" value="Brent 447">
+                        <input type="text" id="notesTime" placeholder="11/14 8:15 AM" value="11/14 8:15 AM">
+                    </div>
+                    <div class="save-notes-date-wrapper">
+                        <button id="save-notes-date">Date & Time</button>
+                    </div>
+                    <div class="save-notes-user-id-wrapper">
+                        <!-- <button id="save-notes-user-id" onclick="$('.save-notes-user-id-action-list').toggle();">My Users</button> -->
+                        <button id="save-notes-user-id">My Users</button>
+                        <div class="save-notes-user-id-action-list">
+                            <!-- <div class="save-notes-user-id-action-list-head">
+                                <h5>My Users</h5>
+                            </div> -->
+                            <div class="save-notes-user-id-action-list-body">
+                                <span>User ID<!-- <i class="fa fa-trash-o"></i> --></span>
+                                <span>User ID<!-- <i class="fa fa-trash-o"></i> --></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="save-notes-filter-by-wrapper">
+                        <button id="save-notes-filter-by" onclick="$('.save-notes-filter-by-action-list').toggle();">Filter By</button>
+                        <div class="save-notes-filter-by-action-list">
+                            <div class="save-notes-filter-by-action-list-head">
+                                <h5>Filter By...</h5>
+                            </div>
+                            <div class="save-notes-filter-by-action-list-body">
+                                <input type="checkbox"> Date<br />
+                                <input type="checkbox"> User Id<br />
+                                <input type="checkbox"> Term<br />
+                                <input type="text" class="search" placeholder="Add term or phrase">
+                                <button class="submit">Submit</button>
+                            </div>
+                        </div>
+                    </div> -->
+                    <button id="save-notes">Save</button>
+                    <div class="expand-icon">
+                        <a href="javascript:void(0)" onclick="toggleNoteList();"><i class="fa fa-angle-down"></i></a>
+                    </div>
+                </div>
+                <div class="notes-list-wrapper enable" id="notes-list-wrapper">
+                    <div class="notes">
+                        <div class="title">
+                            <h4>Brent 447</h4>
+                            <span>11/44 4 AM</span>
+                            <div class="action-buttons">
+                                <i class="fa fa-edit"></i>
+                                <i class="fa fa-trash-o"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            Help Brent focus on honesty and discretion. 
+                            Possible Verses
+                            • Like apples of gold in settings of silver Is a word spoken in right circumstances. Prv. 25:11
+                        </div>
+                    </div>
+                    <div class="notes">
+                        <div class="title">
+                            <h4>Brent 447</h4>
+                            <span>11/44 4 AM</span>
+                            <div class="action-buttons">
+                                <i class="fa fa-edit"></i>
+                                <i class="fa fa-trash-o"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            Help Brent focus on honesty and discretion. 
+                            Possible Verses
+                            • Like apples of gold in settings of silver Is a word spoken in right circumstances. Prv. 25:11
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+<!-- </div> -->
+

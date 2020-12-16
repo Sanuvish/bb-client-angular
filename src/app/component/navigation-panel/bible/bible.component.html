@@ -1,0 +1,1502 @@
+<!-- <div class="grid-stack-item bible-grid" id="bible-grid" data-gs-height="9" data-gs-min-height="2" data-gs-min-width="2"style="height: 400px; width: 400px; margin-left: 5px;"
+            data-gs-width="5" data-gs-x="5" data-gs-y="0"> -->
+<div class="grid-stack-item-content" style="width: 300px;">
+
+
+    <!-- Personal Verse Favs Master Div -->
+    <div class="bible-wrapper" id="bible-wrapper">
+
+        <!-- Personal Favs Header-->
+        <div class="bible-header" ondblclick="expandCollapse('bible')">
+            <div class="bible-header-left">
+                <img src="/assets/dist/img/icons/bible-head-icon.png">
+                <span>Bible</span>
+            </div>
+            <div class="bible-header-right">
+                <!--  <a class="bible-dot-menu" href="javascript:void(0)" onclick="toggleActionButton('personal-favs-table-time')"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a> -->
+                <a href="javascript:void(0)" onclick="toggleButtons()" id="bible-close-btn"><img
+                        src="/assets/dist/img/icons/bible-testament-icon.png"></a>
+                <a href="javascript:void(0)" (click)="togglecloseb()"id="bible-close-btn"><i class="fa fa-close"></i></a>
+            </div>
+        </div>
+
+        <div class="bible-body" id="bible-body">
+            <div class="buttons">
+                <button class="ot" onclick="openTestament('ot')">OT</button>
+                <button class="nt" onclick="openTestament('nt')">NT</button>
+            </div>
+            <div class="testament">
+                <h5>New Testament</h5>
+                <table>
+                    <tr>
+                        <td>Mat</td>
+                        <td>Mar</td>
+                        <td>Luk</td>
+                        <td>Jhn</td>
+                        <td>Act</td>
+                        <td>1Co</td>
+                        <td>2Co</td>
+                        <td>Gal</td>
+                        <td>Eph</td>
+                        <td>Phl</td>
+                    </tr>
+                    <tr>
+                        <td>Col</td>
+                        <td>1Th</td>
+                        <td>2Th</td>
+                        <td>1Ti</td>
+                        <td>2Ti</td>
+                        <td>Tit</td>
+                        <td>Phm</td>
+                        <td>Heb</td>
+                        <td>Jas</td>
+                        <td>1Pe</td>
+                    </tr>
+                    <tr>
+                        <td>2Pe</td>
+                        <td>1Jo</td>
+                        <td>2Jo</td>
+                        <td>3Jo</td>
+                        <td>Jde</td>
+                        <td>Rev</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="chapter">
+                <h5><i class="fa fa-angle-left" aria-hidden="true"></i> Galatians</h5>
+                <table>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bible-searchbar-wrapper">
+                <div class="bible-searchbar">
+                    <input width="100%" type="text" placeholder="Search...">
+                    <i href="#" class="fa fa-search"></i>
+                </div>
+                <div class="select-wrapper">
+                    <div class="custom-select-div">
+                        <label>
+                            <select>
+                                <option>NASB</option>
+                                <option>ESV</option>
+                                <option>NIV</option>
+                                <option>KJV</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="bible-verse">
+                <div class="mySlides">
+                    <div class="navigation-wrapper">
+                        <div class="navigation">
+                            <div class="navigation-inner">
+                                <i class="fa fa-angle-double-left double" aria-hidden="true"></i>
+                                <i class="fa fa-angle-left" aria-hidden="true" onclick="biblePlusSlides(-1)"></i>
+                                <h6>Galatians 5</h6>
+                                <i class="fa fa-angle-right" aria-hidden="true" onclick="biblePlusSlides(1)"></i>
+                                <i class="fa fa-angle-double-right double" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <a class="bible-navigation-dot-menu" href="javascript:void(0)"
+                            onclick="toggleAction('bible-body')"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="scroll-div">
+                        <div class="transaltion">
+                            <h6>Translation Total Count 38x:</h6>
+                            <label><span>lust</span> (31x),<span>lust</span> (31x),<span>lust</span>
+                                (31x),<span>lust</span> (31x)</label>
+                        </div>
+                        <div class="usage">
+                            <h6>Bible Usage:</h6>
+                            <label>desire, craving, longing, desire for what is forbidden, lust</label>
+                        </div>
+                        <div class="table-responsive">
+                            <table>
+                                <tbody>
+
+                                    <!-- content 01 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:1</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                It was for freedom that Christ set us free; therefore keep standing firm
+                                                and do not be subject again to a yoke of slavery.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="strong" id="strong-1">
+                                        <td colspan="2">
+                                            <table>
+                                                <tbody>
+                                                    <tr class="title">
+                                                        <td>English (NASB)</td>
+                                                        <td>Strongs</td>
+                                                    </tr>
+                                                    <tr id="1">
+                                                        <td>Now</td>
+                                                        <td onclick="showStrongVerses()">G1611</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>those who belong</td>
+                                                        <td onclick="showStrongVerses()">G3588</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>to Christ</td>
+                                                        <td onclick="showStrongVerses()">G5547</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jesus</td>
+                                                        <td onclick="showStrongVerses()">G2424</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>have crucified</td>
+                                                        <td onclick="showStrongVerses()">G4717</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>the flesh</td>
+                                                        <td onclick="showStrongVerses()">G4561</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>with</td>
+                                                        <td onclick="showStrongVerses()">G4862</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>its passions</td>
+                                                        <td onclick="showStrongVerses()">G3804</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>and</td>
+                                                        <td onclick="showStrongVerses()">G2532</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>desires</td>
+                                                        <td onclick="showStrongVerses()">G1939</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- content 02 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:2</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s2"
+                                                    onclick="toggleStrong('strong-2', 's2')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                Behold I, Paul, say to you that if you receive circumcision, Christ will
+                                                be of no benefit to you.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="strong" id="strong-2">
+                                        <td colspan="2">
+                                            <table>
+                                                <tbody>
+                                                    <tr class="title">
+                                                        <td>Words</td>
+                                                        <td>Strongs</td>
+                                                    </tr>
+                                                    <tr id="1">
+                                                        <td>Now</td>
+                                                        <td onclick="showStrongVerses()">G1611</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>those who belong</td>
+                                                        <td onclick="showStrongVerses()">G3588</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>to Christ</td>
+                                                        <td onclick="showStrongVerses()">G5547</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jesus</td>
+                                                        <td onclick="showStrongVerses()">G2424</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>have crucified</td>
+                                                        <td onclick="showStrongVerses()">G4717</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>the flesh</td>
+                                                        <td onclick="showStrongVerses()">G4561</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>with</td>
+                                                        <td onclick="showStrongVerses()">G4862</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>its passions</td>
+                                                        <td onclick="showStrongVerses()">G3804</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>and</td>
+                                                        <td onclick="showStrongVerses()">G2532</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>desires</td>
+                                                        <td onclick="showStrongVerses()">G1939</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- content 03 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:3</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                And I testify again to every man who receives circumcision, that he is
+                                                under obligation to keep the whole Law.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 04 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:4</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                You have been severed from Christ, you who are seeking to be justified
+                                                by law; you have fallen from grace.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 05 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:5</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                For we through the Spirit, by faith, are waiting for the hope of
+                                                righteousness.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 06 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:6</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                For in Christ Jesus neither circumcision nor uncircumcision means
+                                                anything, but faith working through love.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 07 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:7</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                You were running well; who hindered you from obeying the truth?
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 08 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:8</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                This persuasion did not come from Him who calls you.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 09 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:9</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                A little leaven leavens the whole lump of dough.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 10 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:10</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                I have confidence in you in the Lord that you will adopt no other view;
+                                                but the one who is disturbing you will bear his judgment, whoever he is.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 11 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:11</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                But I, brethren, if I still preach circumcision, why am I still
+                                                persecuted? Then the stumbling block of the cross has been abolished.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 12 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:12</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                I wish that those who are troubling you would even mutilate themselves.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 13 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:13</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                For you were called to freedom, brethren; only do not turn your freedom
+                                                into an opportunity for the flesh, but through love serve one another.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 14 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:14</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                For the whole Law is fulfilled in one word, in the statement, “YOU SHALL
+                                                LOVE YOUR NEIGHBOR AS YOURSELF.”
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 15 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:15</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                But if you bite and devour one another, take care that you are not
+                                                consumed by one another.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 16 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:16</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                But I say, walk by the Spirit, and you will not carry out the desire of
+                                                the flesh.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 17 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:17</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                For the flesh sets its desire against the Spirit, and the Spirit against
+                                                the flesh; for these are in opposition to one another, so that you may
+                                                not do the things that you please.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 18 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:18</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                But if you are led by the Spirit, you are not under the Law.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 19 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:19</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                Now the deeds of the flesh are evident, which are:immorality, impurity,
+                                                sensuality,
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 20 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:20</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                idolatry, sorcery, enmities, strife, jealousy, outbursts of anger,
+                                                disputes, dissensions, factions,
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 21 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:21</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                envying, drunkenness, carousing, and things like these, of which I
+                                                forewarn you, just as I have forewarned you, that those who practice
+                                                such things will not inherit the kingdom of God.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 22 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:22</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                But the fruit of the Spirit is love, joy, peace, patience, kindness,
+                                                goodness, faithfulness,
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 23 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:23</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                gentleness, self-control; against such things there is no law.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 24 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:24</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                Now those who belong to Christ Jesus have crucified the flesh with its
+                                                passions and desires.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 25 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:25</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                If we live by the Spirit, let us also walk by the Spirit.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <!-- content 26 -->
+                                    <tr>
+                                        <td class="CR-tableLeft">
+                                            <h5>Gal 5:26</h5>
+                                            <div class="actionDiv">
+                                                <span class="s" id="s1"
+                                                    onclick="toggleStrong('strong-1', 's1')">S</span>
+                                                <span class="cr"
+                                                    onclick="crossRefBtn('cross-reference-wrapper')">CR</span>
+                                                <span class="add">Add</span>
+                                                <div class="bible-verse-action-list">
+                                                    <div class="bible-verse-action-list-head">
+                                                        <h5>Add To<i class="fa fa-close"></i></h5>
+                                                    </div>
+                                                    <div class="bible-verse-action-list-body">
+                                                        <span>Work Area</span>
+                                                        <span>Journey</span>
+                                                        <span>Personal Favs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="CR-tableRight">
+                                            <p>
+                                                Let us not become boastful, challenging one another, envying one
+                                                another.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="navigation-wrapper">
+                        <div class="navigation">
+                            <div class="navigation-inner">
+                                <i class="fa fa-angle-left" aria-hidden="true" onclick="biblePlusSlides(-1)"></i>
+                                <h6>Galatians 6</h6>
+                                <i class="fa fa-angle-right" aria-hidden="true" onclick="biblePlusSlides(1)"></i>
+                            </div>
+                        </div>
+                        <a class="bible-navigation-dot-menu" href="javascript:void(0)"
+                            onclick="toggleAction('bible-body')"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                    </div>
+
+
+                    <div class="table-responsive">
+                        <table>
+                            <tbody>
+
+                                <!-- content 01 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:1</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            Brethren, even if anyone is caught in any trespass, you who are spiritual,
+                                            restore such a one in a spirit of gentleness; each one looking to yourself,
+                                            so that you too will not be tempted.
+                                        </p>
+                                    </td>
+                                </tr>
+
+                                <!-- content 02 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:2</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            Bear one another’s burdens, and thereby fulfill the law of Christ.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 03 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:3</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            For if anyone thinks he is something when he is nothing, he deceives
+                                            himself.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 04 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:4</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            But each one must examine his own work, and then he will have reason for
+                                            boasting in regard to himself alone, and not in regard to another.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 05 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:5</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            For each one will bear his own load.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 06 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:6</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            The one who is taught the word is to share all good things with the one who
+                                            teaches him.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 07 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:7</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            Do not be deceived, God is not mocked; for whatever a man sows, this he will
+                                            also reap.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 08 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:8</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            For the one who sows to his own flesh will from the flesh reap corruption,
+                                            but the one who sows to the Spirit will from the Spirit reap eternal life.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 09 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:9</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            Let us not lose heart in doing good, for in due time we will reap if we do
+                                            not grow weary.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 010 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:10</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            So then, while we have opportunity, let us do good to all people, and
+                                            especially to those who are of the household of the faith.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 011 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:11</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            See with what large letters I am writing to you with my own hand.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 12 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:12</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            Those who desire to make a good showing in the flesh try to compel you to be
+                                            circumcised, simply so that they will not be persecuted for the cross of
+                                            Christ.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 13 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:13</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            For those who are circumcised do not even keep the Law themselves, but they
+                                            desire to have you circumcised so that they may boast in your flesh.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 14 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:14</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            But may it never be that I would boast, except in the cross of our Lord
+                                            Jesus Christ, through which the world has been crucified to me, and I to the
+                                            world.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 15 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:15</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            For neither is circumcision anything, nor uncircumcision, but a new
+                                            creation.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 16 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:16</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            And those who will walk by this rule, peace and mercy be upon them, and upon
+                                            the Israel of God.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 17 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:17</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            From now on let no one cause trouble for me, for I bear on my body the
+                                            brand-marks of Jesus.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- content 18 -->
+                                <tr>
+                                    <td class="CR-tableLeft">
+                                        <h5>Gal 6:18</h5>
+                                        <div class="actionDiv">
+                                            <span class="s">S</span>
+                                            <span class="cr">CR</span>
+                                            <span class="add">Add</span>
+                                            <div class="bible-verse-action-list">
+                                                <div class="bible-verse-action-list-head">
+                                                    <h5>Add To<i class="fa fa-close"></i></h5>
+                                                </div>
+                                                <div class="bible-verse-action-list-body">
+                                                    <span>Work Area</span>
+                                                    <span>Journey</span>
+                                                    <span>Personal Favs</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="CR-tableRight">
+                                        <p>
+                                            The grace of our Lord Jesus Christ be with your spirit, brethren. Amen.
+                                        </p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</div>
